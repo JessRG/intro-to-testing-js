@@ -31,11 +31,21 @@ describe('isEven', function () {
 });
 
 // Unit tests for sayHello
+// Exercise 3, 4, 5, 7 (add, commit, and push)
 describe('sayHello', function () {
     it('should be a defined function', function() {
         expect(typeof sayHello).toBe('function');
     });
     it('should return a string when called', function() {
         expect(typeof sayHello()).toBe('string');
+    });
+    it('should return "Hello, Jane!" when passed the value "Jane"', function() {
+        expect(sayHello("Jane")).toBe('Hello, Jane!');
+    });
+    it('should return "Hello, Alex!" when passed the value "Alex"', function() {
+        expect(sayHello("Alex")).toBe('Hello, Alex!');
+    });
+    it('should return "Hello, Pat!" when passed the value "Pat"', function() {
+        expect(sayHello("Pat")).toBe('Hello, Pat!');
     });
 });
