@@ -11,3 +11,8 @@ function isEven(num) {
         return false;
     }
 }
+
+// sayHello function
+function sayHello() {
+    return '';
+}

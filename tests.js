@@ -28,4 +28,14 @@ describe('isEven', function () {
     it('should return false when passed the value 7', function () {
         expect(isEven(7)).toBe(false);
     });
-})
+});
+
+// Unit tests for sayHello
+describe('sayHello', function () {
+    it('should be a defined function', function() {
+        expect(typeof sayHello).toBe('function');
+    });
+    it('should return a string when called', function() {
+        expect(typeof sayHello()).toBe('string');
+    });
+});
