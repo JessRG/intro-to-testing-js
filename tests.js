@@ -13,3 +13,19 @@ describe('helloWorld', function() {
       expect(helloWorld()).not.toBe(undefined);
     });
 });
+
+// Unit tests for the isEven function
+describe('isEven', function () {
+    it('should be a defined function', function () {
+        expect(typeof isEven).toBe('function');
+    });
+    it('should return a boolean value', function () {
+        expect(typeof isEven()).toBe('boolean');
+    });
+    it('should return true when passed the value of 10', function () {
+        expect(isEven(10)).toBe(true);
+    });
+    it('should return false when passed the value 7', function () {
+        expect(isEven(7)).toBe(false);
+    });
+})
