@@ -106,3 +106,6 @@ function isVowel(ltr) {
         return false;
     }
 }
+
+// add function
+function add() {}

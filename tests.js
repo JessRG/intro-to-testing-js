@@ -165,3 +165,19 @@ describe('isVowel', function () {
         expect(isVowel()).toBe(false);
     });
 });
+
+// Unit tests for the add function
+// Exercise 13
+describe('add', function () {
+    it('should be a defined function', function () {
+        expect(typeof add).toBe('function');
+    });
+    // Assert that add:
+    // add(2, 3) returns 5
+    // add(-3, -9) returns -12
+    // add("5", 6) returns 11
+    // add("-4", "10") returns 6
+    // add("banana", "split") returns NaN
+    // add(2, "apples") returns NaN
+    // add() returns NaN
+});
