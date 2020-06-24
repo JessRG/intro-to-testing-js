@@ -82,4 +82,27 @@ function isEven(num) {
 }
 
 // isVowel function
-function isVowel() {}
+function isVowel(ltr) {
+    // if (ltr === 'a') return true;
+    // if (ltr === 'A') return true;
+    // if (ltr === 'y') return false;
+    // if (ltr === 4) return false;
+    // if (typeof ltr === 'boolean') return false;
+    // if (typeof ltr === 'string' && ltr.length > 1) return false;
+    // if (ltr === undefined) return false;
+    // return true;
+    if (ltr && typeof ltr === 'string') {
+        switch (ltr.toUpperCase()) {
+            case 'A':
+            case 'E':
+            case 'I':
+            case 'O':
+            case 'U':
+                return true;
+            default:
+                return false;
+        }
+    } else {
+        return false;
+    }
+}
