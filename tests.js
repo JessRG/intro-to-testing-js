@@ -196,12 +196,12 @@ describe('add', function () {
         expect(add("-4", "10")).toBe(6);
     });
     it('should return NaN when called with add("banana", "split")', function () {
-        expect(add("banana", "split")).not.toBe(NaN);
+        expect(add("banana", "split")).toBeNaN();
     });
-    // it('should return NaN when called with add(2, "apples")', function () {
-    //     expect(add(2, "apples")).toBe(isNaN());
-    // });
-    // it('should return NaN when called with add("banana", "split")', function () {
-    //     expect(add()).toBe(NaN);
-    // });
+    it('should return NaN when called with add(2, "apples")', function () {
+        expect(add(2, "apples")).toBeNaN();
+    });
+    it('should return NaN when called without arguments', function() {
+        expect(add()).toBeNaN();
+    });
 });
