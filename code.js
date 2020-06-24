@@ -46,3 +46,15 @@ function sayHello(str) {
     }
 }
 
+// isFive function
+function isFive(num) {
+    // if(parseFloat(num) === 5) {
+    //     return true;
+    // }
+    // else if (num === 5) {
+    //     return true;
+    // } else {
+    //     return false;
+    // }
+    return parseFloat(num) === 5;
+}

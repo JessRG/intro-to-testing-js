@@ -74,4 +74,25 @@ describe('sayHello', function() {
     it('should return "Hello, World!" when passed a numeric string', function() {
         expect(sayHello("5")).toBe('Hello, World!');
     });
+}); // Exercise 9 (add, commit, and push)
+
+// Unit tests for isFive
+// Exercise 10
+describe('isFive', function () {
+    it('should be a defined function', function () {
+        expect(typeof isFive).toBe('function');
+    });
+    // Ensure that isFive returns a boolean no matter what the input
+    // Ensure that isFive returns true when passed 5
+    // What about if we pass in the string "5"? Do you want isFive to return true for that?
+    // If so, write the test, ensure that the test is failing, and then write the implementation
+    it('should return a boolean when called', function () {
+        expect(typeof isFive()).toBe('boolean');
+    });
+    it('should return true when passed the value 5', function () {
+        expect(isFive(5)).toBe(true);
+    });
+    it("should return true when passed the numeric string '5'", function () {
+        expect(isFive('5')).toBe(true);
+    });
 });
