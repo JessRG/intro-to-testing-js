@@ -15,37 +15,63 @@ describe('helloWorld', function() {
 });
 
 // Unit tests for the isEven function
-describe('isEven', function () {
-    it('should be a defined function', function () {
+describe('isEven', function() {
+    it('should be a defined function', function() {
         expect(typeof isEven).toBe('function');
     });
-    it('should return a boolean value', function () {
+    it('should return a boolean value', function() {
         expect(typeof isEven()).toBe('boolean');
     });
-    it('should return true when passed the value of 10', function () {
+    it('should return true when passed the value of 10', function() {
         expect(isEven(10)).toBe(true);
     });
-    it('should return false when passed the value 7', function () {
+    it('should return false when passed the value 7', function() {
         expect(isEven(7)).toBe(false);
     });
 });
 
 // Unit tests for sayHello
-// Exercise 3, 4, 5, 7 (add, commit, and push)
-describe('sayHello', function () {
+//  Exercise 7 (add, commit, and push)
+describe('sayHello', function() {
     it('should be a defined function', function() {
         expect(typeof sayHello).toBe('function');
     });
+    // Exercise 2
     it('should return a string when called', function() {
         expect(typeof sayHello()).toBe('string');
     });
+    // Exercise 3
     it('should return "Hello, Jane!" when passed the value "Jane"', function() {
         expect(sayHello("Jane")).toBe('Hello, Jane!');
     });
+    // Exercise 4
     it('should return "Hello, Alex!" when passed the value "Alex"', function() {
         expect(sayHello("Alex")).toBe('Hello, Alex!');
     });
+    // Exercise 5
     it('should return "Hello, Pat!" when passed the value "Pat"', function() {
         expect(sayHello("Pat")).toBe('Hello, Pat!');
+    });
+    // Exercise 8
+    it('should return "Hello, World!" when no value is passed', function() {
+        expect(sayHello()).toBe('Hello, World!');
+    });
+    it('should return "Hello, World!" when passed the value true', function() {
+        expect(sayHello(true)).toBe('Hello, World!');
+    });
+    it('should return "Hello, World!" when passed the value false', function() {
+        expect(sayHello(false)).toBe('Hello, World!');
+    });
+    it('should return "Hello, World!" when passed the value null', function() {
+        expect(sayHello(null)).toBe('Hello, World!');
+    });
+    it('should return "Hello, World!" when passed an empty string', function() {
+        expect(sayHello("")).toBe('Hello, World!');
+    });
+    it('should return "Hello, World!" when passed a number', function() {
+        expect(sayHello(2.3)).toBe('Hello, World!');
+    });
+    it('should return "Hello, World!" when passed a numeric string', function() {
+        expect(sayHello("5")).toBe('Hello, World!');
     });
 });

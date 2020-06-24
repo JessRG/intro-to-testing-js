@@ -22,5 +22,27 @@ function sayHello(str) {
     // } else {
     //     return `Hello, Jane!`;
     // }
-    return `Hello, ${str}!`;
+    // if (str === undefined) {
+    //     return 'Hello, World!';
+    // }
+    // if (str === true) {
+    //     return 'Hello, World!';
+    // }
+    // if (str === false) {
+    //     return 'Hello, World!';
+    // }
+    // if (str === "") {
+    //     return "Hello, World!";
+    // }
+    // if (typeof parseFloat(str) === 'number') {
+    //     return "Hello, World!"
+    // }
+    if (str && isNaN(str)) {
+        return `Hello, ${str}!`;
+    } else if (typeof str == 'number') {
+        return 'Hello, World!'
+    } else {
+        return 'Hello, World!';
+    }
 }
+
