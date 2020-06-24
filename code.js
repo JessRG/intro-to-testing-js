@@ -3,36 +3,6 @@ function helloWorld() {
     return "Hello, World!";
 }
 
-// isEven function
-function isEven(num) {
-    // if (num === 2) {
-    //     return true;
-    // }
-    // if (num === -4) {
-    //     return true;
-    // }
-    // if (num === 3) {
-    //     return false;
-    // }
-    // if (num === "banana") {
-    //     return false;
-    // }
-    // if (num === "8") {
-    //     return true;
-    // }
-    // if (num === Infinity) {
-    //     return false;
-    // }
-    // if (typeof num === 'boolean') {
-    //     return false;
-    // }
-    // if (num === undefined) {
-    //     return false;
-    // }
-    // return true;
-    return parseFloat(num) % 2 === 0;
-}
-
 // sayHello function
 // Exercise 6
 function sayHello(str) {
@@ -79,3 +49,37 @@ function isFive(num) {
     // }
     return parseFloat(num) === 5;
 }
+
+
+// isEven function
+function isEven(num) {
+    // if (num === 2) {
+    //     return true;
+    // }
+    // if (num === -4) {
+    //     return true;
+    // }
+    // if (num === 3) {
+    //     return false;
+    // }
+    // if (num === "banana") {
+    //     return false;
+    // }
+    // if (num === "8") {
+    //     return true;
+    // }
+    // if (num === Infinity) {
+    //     return false;
+    // }
+    // if (typeof num === 'boolean') {
+    //     return false;
+    // }
+    // if (num === undefined) {
+    //     return false;
+    // }
+    // return true;
+    return parseFloat(num) % 2 === 0;
+}
+
+// isVowel function
+function isVowel() {}
