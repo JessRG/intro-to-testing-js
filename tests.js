@@ -14,22 +14,6 @@ describe('helloWorld', function() {
     });
 });
 
-// Unit tests for the isEven function
-describe('isEven', function() {
-    it('should be a defined function', function() {
-        expect(typeof isEven).toBe('function');
-    });
-    it('should return a boolean value', function() {
-        expect(typeof isEven()).toBe('boolean');
-    });
-    it('should return true when passed the value of 10', function() {
-        expect(isEven(10)).toBe(true);
-    });
-    it('should return false when passed the value 7', function() {
-        expect(isEven(7)).toBe(false);
-    });
-});
-
 // Unit tests for sayHello
 //  Exercise 7 (add, commit, and push)
 describe('sayHello', function() {
@@ -94,5 +78,49 @@ describe('isFive', function () {
     });
     it("should return true when passed the numeric string '5'", function () {
         expect(isFive('5')).toBe(true);
+    });
+});
+
+// Unit tests for the isEven function
+// Exercise 11
+describe('isEven', function() {
+    it('should be a defined function', function() {
+        expect(typeof isEven).toBe('function');
+    });
+    // returns a boolean no matter the input
+    // returns true when executed with isEven(2)
+    // returns true when executed with isEven(-4)
+    // returns false when executed with isEven(3)
+    // returns false when called with isEven("banana")
+    // returns true when called with isEven("8")
+    // returns false when called with isEven(Infinity)
+    // return false when called with a boolean input like isEven(true) or isEven(false)
+    // returns false when called without an argument like isEven()
+    it('should return a boolean value', function() {
+        expect(typeof isEven()).toBe('boolean');
+    });
+    it('should return true when passed the value of 2', function() {
+        expect(isEven(2)).toBe(true);
+    });
+    it('should return true when passed the value -4', function() {
+        expect(isEven(-4)).toBe(true);
+    });
+    it('should return false when passed the value 3', function() {
+        expect(isEven(3)).toBe(false);
+    });
+    it('should return false when called with isEven("banana")', function() {
+        expect(isEven("banana")).toBe(false);
+    });
+    it('should return true when called with isEven("8")', function() {
+        expect(isEven("8")).toBe(true);
+    });
+    it('should return false when called with isEven(Infinity)', function() {
+        expect(isEven(Infinity)).toBe(false);
+    });
+    it('should return false when called with a boolean input', function() {
+        expect(isEven(true)).toBe(false);
+    });
+    it('should return false when called without an argument', function() {
+        expect(isEven()).toBe(false);
     });
 });

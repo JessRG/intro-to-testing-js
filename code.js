@@ -5,11 +5,32 @@ function helloWorld() {
 
 // isEven function
 function isEven(num) {
-    if (num === 10) {
-        return true;
-    } else {
-        return false;
-    }
+    // if (num === 2) {
+    //     return true;
+    // }
+    // if (num === -4) {
+    //     return true;
+    // }
+    // if (num === 3) {
+    //     return false;
+    // }
+    // if (num === "banana") {
+    //     return false;
+    // }
+    // if (num === "8") {
+    //     return true;
+    // }
+    // if (num === Infinity) {
+    //     return false;
+    // }
+    // if (typeof num === 'boolean') {
+    //     return false;
+    // }
+    // if (num === undefined) {
+    //     return false;
+    // }
+    // return true;
+    return parseFloat(num) % 2 === 0;
 }
 
 // sayHello function
