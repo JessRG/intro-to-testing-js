@@ -30,7 +30,7 @@ function sayHello(str) {
     // }
     if (str && isNaN(str)) {
         return `Hello, ${str}!`;
-    } else if (typeof str == 'number') {
+    } else if (typeof str === 'number') {
         return 'Hello, World!'
     } else {
         return 'Hello, World!';
